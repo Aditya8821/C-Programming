@@ -8,11 +8,11 @@ void EnQueue(int value){
 	    printf("\nQueue is Full!!");
     }
 	else{
-		if(front==-1)
+		if(front==-1) //if queue is empty then put front=0
 		{
-		   front=0;
+		   front=0; 
 	    }
-		rear++;
+		rear++; //rear will increase in both cases 1.empty queue 2. some elements already inserted 
 		Queue[rear]=value;
 	}
 }
