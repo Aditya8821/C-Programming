@@ -17,7 +17,7 @@ void EnQueue(int value){
 	}
 }
 void DeQueue(){
-	if(front==rear)
+	if(front==-1)
 	{
 	    printf("\nQueue is already Empty!!");
 	}
