@@ -23,7 +23,9 @@ void DeQueue(){
 	}
 	else{
 		if(front==rear)
-		front=rear=-1;
+		{
+		   front=rear=-1;
+		}
 		front++;
 	}
 }
