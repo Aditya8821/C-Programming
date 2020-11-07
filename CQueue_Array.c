@@ -6,7 +6,7 @@ int CQ[size],front=-1,rear=-1;
 void Enqueue(int value){
 	if((rear+1)%size==front)
 	printf("\nCQueue is Full!!!!");
-	else if(front==-1 && rear==-1){
+	else if(front==-1){
 		front=rear=0;
 		CQ[rear]=value;
 	}
@@ -17,7 +17,7 @@ void Enqueue(int value){
 
 }
 void Dequeue(){
-	if(front==-1 && rear==-1)
+	if(front==-1)
 	printf("\nCQueue is already Empty!!");
 	else if(front==rear)
 	front=rear=-1;
@@ -25,7 +25,7 @@ void Dequeue(){
 	front=(front+1)%size;
 }
 void Display(){
-	if(front==-1 && rear==-1)
+	if(front==-1)
 	printf("\nCQueue is Empty!!!");
 	else{
 		printf("\nQueue:- ");
