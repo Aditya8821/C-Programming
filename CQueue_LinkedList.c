@@ -21,7 +21,7 @@ void Enqueue(int value){
 }
 void Dequeue(){
 	struct node *temp=front;
-	if(front==NULL && rear==NULL)
+	if(front==NULL)
 	   printf("\nCQueue is Empty!!!");
 	else if(front==rear){
 		front=rear=NULL;
@@ -35,7 +35,7 @@ void Dequeue(){
 }
 void Display(){
 	struct node *temp=front;
-	if(front==NULL && rear==NULL)
+	if(front==NULL)
 	   printf("\nCQueue is Empty!!!");
 	else{
 		printf("\nCQueue: ");
