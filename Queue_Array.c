@@ -11,7 +11,7 @@ void EnQueue(int value){
 	else{
 		if(front==-1) //if queue is empty then put front=0
 		{
-		   front=0; 
+		   front++; 
 	    }
 		rear++; //rear will increase in both cases 1.empty queue 2. some elements already inserted 
 		Queue[rear]=value;
