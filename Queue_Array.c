@@ -1,3 +1,4 @@
+//in Queue insertion from rear++ and deletion from front++
 #include<stdio.h>
 #include<conio.h>
 #define size 10
