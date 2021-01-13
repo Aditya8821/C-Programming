@@ -1,0 +1,2 @@
+("%d ",root->data);
+        inord
